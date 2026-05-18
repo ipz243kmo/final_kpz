@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.LevelTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="English Level Test" Height="500" Width="700"
+        WindowStartupLocation="CenterScreen" Background="#EEF1F6">
+    
+    <Grid Margin="20">
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+
+            <TextBlock Text="Determine Your English Level"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Select level manually -->
+            <TextBlock Text="If you are confident, choose your level:" 
+                       FontSize="16" Margin="0,0,0,10"/>
+            <ComboBox x:Name="LevelComboBox" Width="250" Height="30" Margin="0,0,0,20">
+                <ComboBoxItem Content="A1 - Beginner"/>
+                <ComboBoxItem Content="A2 - Elementary"/>
+                <ComboBoxItem Content="B1 - Intermediate"/>
+                <ComboBoxItem Content="B2 - Upper-Intermediate"/>
+                <ComboBoxItem Content="C1 - Advanced"/>
+                <ComboBoxItem Content="C2 - Proficient"/>
+            </ComboBox>
+            <Button Content="Confirm Level"
+                    Width="250" Height="40" Background="#2196F3" Foreground="White"
+                    FontWeight="Bold" Click="ConfirmLevel_Click"/>
+
+            <Separator Margin="0,20,0,20"/>
+
+            <!-- Test questions -->
+            <TextBlock Text="Or take the test to determine your level:" FontSize="16" Margin="0,0,0,10"/>
+            <StackPanel x:Name="QuestionPanel" Margin="0,0,0,20"/>
+            <Button Content="Next" Width="100" Height="35" Background="#4CAF50" Foreground="White"
+                    FontWeight="Bold" HorizontalAlignment="Left" Click="NextQuestion_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

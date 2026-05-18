@@ -1,0 +1,172 @@
+﻿<Window x:Class="WpfApp1.TheoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Grammar Theory"
+        Height="650"
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        Background="#F2F6FF">
+
+    <Grid Margin="20">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- ЛІВА ПАНЕЛЬ -->
+        <Border Grid.Column="0"
+                Background="White"
+                CornerRadius="15"
+                Padding="20">
+
+            <StackPanel>
+
+                <TextBlock Text="Choose Tense"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="#3A57E8"
+                           Margin="0 0 0 20"
+                           HorizontalAlignment="Center"/>
+
+
+                <!-- КНОПКИ ЧАСІВ -->
+
+                <Button Content="Present Simple"
+                        Height="45"
+                        Margin="0 5"
+                        FontWeight="Bold"
+                        Background="#6C8CFF"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="PresentSimple_Click"/>
+
+                <Button Content="Present Continuous"
+                        Height="45"
+                        Margin="0 5"
+                        FontWeight="Bold"
+                        Background="#7ED957"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="PresentContinuous_Click"/>
+
+                <Button Content="Past Simple"
+                        Height="45"
+                        Margin="0 5"
+                        FontWeight="Bold"
+                        Background="#FF914D"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="PastSimple_Click"/>
+
+                <Button Content="Future Simple"
+                        Height="45"
+                        Margin="0 5"
+                        FontWeight="Bold"
+                        Background="#FF6F91"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="FutureSimple_Click"/>
+
+
+                <Separator Margin="20"/>
+
+
+                <!-- ВИБІР МОВИ -->
+
+                <TextBlock Text="Language"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"/>
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0 10">
+
+                    <Button Content="English"
+                            Width="110"
+                            Margin="5"
+                            Background="#3A57E8"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Click="English_Click"/>
+
+                    <Button Content="Українська"
+                            Width="110"
+                            Margin="5"
+                            Background="#FFD93D"
+                            BorderThickness="0"
+                            Click="Ukrainian_Click"/>
+
+                </StackPanel>
+
+
+                <!-- КНОПКА НАЗАД -->
+
+                <Button Content="⬅ Back to Profile"
+                        Height="40"
+                        Margin="0 20 0 0"
+                        FontWeight="Bold"
+                        Background="#444"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="Back_Click"/>
+
+            </StackPanel>
+
+        </Border>
+
+
+
+        <!-- ПРАВА ПАНЕЛЬ ПРАВИЛ -->
+
+        <Border Grid.Column="1"
+                Margin="20 0 0 0"
+                CornerRadius="15"
+                Padding="30"
+                Background="White">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10"
+                                  ShadowDepth="3"
+                                  Opacity="0.2"/>
+            </Border.Effect>
+
+            <ScrollViewer>
+
+                <StackPanel>
+
+                    <!-- ЗАГОЛОВОК -->
+
+                    <TextBlock x:Name="TitleText"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="32"
+                               FontWeight="Bold"
+                               Foreground="#3A57E8"
+                               Margin="0 0 0 20"/>
+
+
+                    <!-- КАРТКА ТЕОРІЇ -->
+
+                    <Border Background="#F6F8FF"
+                            Padding="20"
+                            CornerRadius="12">
+
+                        <TextBlock x:Name="RuleText"
+                                   FontFamily="Georgia"
+                                   FontSize="18"
+                                   TextWrapping="Wrap"
+                                   LineHeight="30"
+                                   Foreground="#2B2B2B"/>
+
+                    </Border>
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </Border>
+
+    </Grid>
+</Window>

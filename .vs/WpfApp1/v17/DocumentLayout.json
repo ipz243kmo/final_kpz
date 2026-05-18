@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\repos\\Kursovi\\WpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A620B823-5265-4086-93B7-06B6B61F5C3C}|WpfApp1\\WpfApp1.csproj|m:\\repos\\kursovi\\wpfapp1\\wpfapp1\\models\\grammarexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A620B823-5265-4086-93B7-06B6B61F5C3C}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\models\\grammarexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GrammarExercise.cs",
+              "DocumentMoniker": "M:\\repos\\Kursovi\\WpfApp1\\WpfApp1\\Models\\GrammarExercise.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Models\\GrammarExercise.cs",
+              "ToolTip": "M:\\repos\\Kursovi\\WpfApp1\\WpfApp1\\Models\\GrammarExercise.cs",
+              "RelativeToolTip": "WpfApp1\\Models\\GrammarExercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:50:27.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
